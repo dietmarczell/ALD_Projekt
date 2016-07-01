@@ -178,7 +178,7 @@ public class server {
 					
 				 if(consoleline_split[0].toUpperCase().equals(commands[1]))
 					{
-						Eingabe_start = consoleline.split(":")[1];
+						Eingabe_start = consoleline_split[1];
 						Eingabe_start = Eingabe_start.substring(0,1).toUpperCase() + Eingabe_start.substring(1);
 						try
 						{
@@ -200,7 +200,7 @@ public class server {
 					}
 					else if(consoleline_split[0].toUpperCase().equals(commands[2]))
 					{
-						Eingabe_end = consoleline.split(":")[1];
+						Eingabe_end = consoleline_split[1];
 						Eingabe_end = Eingabe_end .substring(0,1).toUpperCase() + Eingabe_end .substring(1);
 						try
 						{
